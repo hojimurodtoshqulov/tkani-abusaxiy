@@ -1,0 +1,107 @@
+$cardPadding: 15px;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0px 2px 10px rgba(50, 50, 71, 0.14);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: $cardPadding;
+  color: #060f42;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: #060f42;
+    color: #fff;
+
+    .addToCardBtn {
+      color: #ffcd1b;
+    }
+  }
+}
+
+.new_label {
+  position: absolute;
+  top: $cardPadding;
+  left: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  clip-path: polygon(0% 0%, 100% 0, 82% 48%, 100% 100%, 0% 100%);
+  background-color: #e93232;
+  padding: 3px 40px 5px 5px;
+  padding-right: 5px;
+  color: #fff;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: end;
+}
+
+.addToCardBtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: #01579b;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.cardImgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  aspect-ratio: 1 / 1;
+  img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: $cardPadding;
+}
+
+.priceNumber {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.priceUnit {
+  margin-left: 2px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.oneClickBtn {
+  color: #fff;
+  padding: 10px 12px;
+  background: #06a56c;
+  border: none;
+  border-radius: 4px;
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
