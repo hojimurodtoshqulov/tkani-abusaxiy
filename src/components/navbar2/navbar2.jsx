@@ -4,6 +4,7 @@ import Logo from "../../media/Logo.png"
 import { Link } from 'react-router-dom';
 import Korzina from "../../media/korzinaicon.png"
 import { Tel } from '../footer/network';
+import Search from './search';
 
 const Navbar2 = () => {
     return (
@@ -15,10 +16,9 @@ const Navbar2 = () => {
 
                 <div className={c.bars}><i class="fa-solid fa-bars"></i></div>
 
-                <form action=""><input type="text" placeholder='Поиск ' /></form>
-
+                <Search /> 
                 <Tel />
-                
+
                 <div className={c.korzina}><img src={Korzina} alt="korzina img" /></div>
             </div>
         </div>
