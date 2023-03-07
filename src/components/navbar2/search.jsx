@@ -5,7 +5,6 @@ import c from "./navbar2.module.scss";
 
 const Search = () => {
   const [searchResults, setSearchResults] = useState([]);
-
   const [searchQuery, setSearchQuery] = useState("");
   const [showResults, setShowResults] = useState(false);
   const inputBoxRef = useRef(null);
