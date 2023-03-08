@@ -6,6 +6,7 @@ import { BsCartPlus } from "react-icons/bs";
 
 
 function ProductCard({ imgUrl, title, price, priceUnit, slug, isNew }) {
+function ProductCard({ imageUrl, title, price, priceUnit, slug = "", isNew }) {
   return (
     <div className={styles.card}>
       <div>
@@ -23,7 +24,7 @@ function ProductCard({ imgUrl, title, price, priceUnit, slug, isNew }) {
         </div>
         <Link to={`/${slug}`}>
           <div className={styles.cardImgBox}>
-            <img src={imgUrl} alt="title" />
+            <img src={imageUrl} alt={title} />
           </div>
           <span className={styles.title}>{title}</span>
         </Link>
@@ -38,5 +39,5 @@ function ProductCard({ imgUrl, title, price, priceUnit, slug, isNew }) {
     </div>
   );
 }
-
-export default ProductCard;
+}
+export default ProductCard
