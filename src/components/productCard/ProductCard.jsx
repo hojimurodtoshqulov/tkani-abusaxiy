@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
 import { BsCartPlus } from "react-icons/bs";
 
+
+
 function ProductCard({ imgUrl, title, price, priceUnit, slug, isNew }) {
   return (
     <div className={styles.card}>
