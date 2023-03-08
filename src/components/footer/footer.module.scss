@@ -1,0 +1,32 @@
+$darkblue: #060F42;
+$linkColor: #F4F8FB;
+
+.footer{
+    width: 100%;
+    background-color: $darkblue;
+    padding: 2rem 0 5rem;
+    &__main{
+        width: 80%;
+        margin: 0 auto;
+        color: $linkColor;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        ul{
+            line-height: 1.8rem;
+            li{
+                font-size: 1rem;
+                b{
+                    font-size: 1.2rem;
+                }
+            }
+            .network{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 2rem;
+                padding: .4rem;
+            }
+        }
+    }
+}

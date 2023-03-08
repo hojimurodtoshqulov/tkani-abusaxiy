@@ -1,0 +1,51 @@
+$darkblue: #060F42;
+$linkColor: #F4F8FB;
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    a{
+        color: inherit;
+    }
+}
+
+.navbar{
+    width: 100%;
+    background-color: $darkblue;
+    &__main{
+        width: 80%;
+        margin: 0 auto;
+        padding: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__links{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.2rem;
+            a{
+                font-size: .9rem;
+                color: $linkColor;
+            }
+        }
+        &__lang{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .4rem;
+            li{
+                color: $linkColor;
+                cursor: pointer;
+            }
+            span{
+                color: $linkColor;
+                
+            }
+        }
+    }
+
+}
