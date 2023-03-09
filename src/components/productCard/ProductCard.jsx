@@ -13,6 +13,7 @@ function ProductCard({
 	price,
 	slug = "",
 	isNew,
+  // console.log("Something");
 }) {
 console.log("salom");
 	return (
