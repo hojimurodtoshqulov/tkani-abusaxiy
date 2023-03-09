@@ -36,10 +36,7 @@
 	place-items: center;
 	position: relative;
 	margin-top: 5%;
-<<<<<<< HEAD
-=======
 	// border: 1px solid #060F42;
->>>>>>> ae1ea5c6312b655ef1402488bae0dbbcd6c8a7b5
 	padding: 0;
 
 	.slider {
@@ -49,10 +46,7 @@
 		width: 100%;
 		overflow: hidden;
 		.slide_track {
-<<<<<<< HEAD
-=======
 			// border: 1px solid #060F42;
->>>>>>> ae1ea5c6312b655ef1402488bae0dbbcd6c8a7b5
 			height: 100%;
 			display: flex;
 			width: calc(250px * 18);
@@ -70,18 +64,11 @@
 			align-items: center;
 			justify-content: flex-start;
 			perspective: 100px;
-<<<<<<< HEAD
-=======
 			// border: 1px solid #060F42;
->>>>>>> ae1ea5c6312b655ef1402488bae0dbbcd6c8a7b5
 			&:hover {
 				background: #060f42ab;
 			}
 		}
-<<<<<<< HEAD
-		
-=======
->>>>>>> ae1ea5c6312b655ef1402488bae0dbbcd6c8a7b5
 	}
 }
 
