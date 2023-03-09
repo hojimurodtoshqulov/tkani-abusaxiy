@@ -15,7 +15,8 @@ function ProductCard({
 	isNew,
   // console.log("Something");
 }) {
-console.log("salom");
+  console.log("Something, bla bla");
+console.log("salom, to someone"); 
 	return (
 		<div className={styles.card}>
 			<div>
