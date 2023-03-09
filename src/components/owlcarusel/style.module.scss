@@ -1,34 +1,34 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.owlcarousel{
-    width: 100%;
-    background-color: #22275E;
-    padding: 30px 0;
-    .owl_title{
-        width: 90%;
-        margin: 10px auto;
-        display: flex;
-        gap: 20px;
-        padding: 20px 0;
-        justify-content: center;
-        align-items: center;
-        .line1{
-            background-color: #fff;
-            width: 15%;
-            height: 2px;
-        }
-        .line2{
-            background-color: #fff;
-            width: 65%;
-            height: 2px;
-        }
-        h1{
-            color: white;
-        }
-    }
+.owlcarousel {
+	background-color: #22275e;
+	padding: 3% 5%;
+	.owl_title {
+		width: 100%;
+		margin: 10px auto;
+		display: flex;
+		padding: 20px 0;
+		justify-content: space-between;
+		align-items: center;
+		.line1 {
+			background-color: #fff;
+			width: 21%;
+			height: 2px;
+		}
+		.line2 {
+			background-color: #fff;
+			width: 62%;
+			height: 2px;
+		}
+		h1 {
+			text-align: center;
+			width: 15%;
+			color: white;
+		}
+	}
 }
 
 .sectionSlides {
@@ -36,20 +36,16 @@
 	place-items: center;
 	position: relative;
 	margin-top: 5%;
-	// border: 1px solid #060F42;
 	padding: 0;
-
 	.slider {
-		// height: 300px;
 		margin: auto;
 		position: relative;
 		width: 100%;
 		overflow: hidden;
 		.slide_track {
-			// border: 1px solid #060F42;
 			height: 100%;
 			display: flex;
-			width: calc(250px * 18);
+			width: calc(300px * 18);
 			animation: scroll 40s linear infinite;
 			&:hover {
 				animation-play-state: paused;
@@ -64,7 +60,6 @@
 			align-items: center;
 			justify-content: flex-start;
 			perspective: 100px;
-			// border: 1px solid #060F42;
 			&:hover {
 				background: #060f42ab;
 			}
@@ -77,6 +72,6 @@
 		transform: translateX(0);
 	}
 	to {
-		transform: translateX(calc(-350px * 9));
+		transform: translateX(calc(-300px * 9));
 	}
 }
