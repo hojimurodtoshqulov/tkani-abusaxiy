@@ -12,28 +12,29 @@ export default function Headericon() {
     return (
         <div className={c.headericon}>
             <div className={c.singleicon}>
-                <i class={c.HiWrenchScrewdriver}><HiWrenchScrewdriver/></i>
+                <i className={c.HiWrenchScrewdriver}><HiWrenchScrewdriver/></i>
                 <p>Бесплатная <br /> сборка</p>
             </div>
             <div className={c.singleicon}>
-                <i class={c.TbCertificate}><TbCertificate/></i>
+                <i className={c.TbCertificate}><TbCertificate/></i>
                 <p>Официальная <br /> гарантия</p>
             </div>
             <div className={c.singleicon}>
-                <i class={c.AiOutlineSafetyCertificate}><AiOutlineSafetyCertificate/></i>
+                <i className={c.AiOutlineSafetyCertificate}><AiOutlineSafetyCertificate/></i>
                 <p>Лучшая <br /> цена</p>
             </div>
             <div className={c.singleicon}>
-                <i class={c.BiCalendarStar}><BiCalendarStar/></i>
+                <i className={c.BiCalendarStar}><BiCalendarStar/></i>
                 <p>Бесплатная <br /> доставка</p>
             </div>
             <div className={c.singleicon}>
-                <i class={c.GiCreditsCurrency}><GiCreditsCurrency/></i>
+                <i className={c.GiCreditsCurrency}><GiCreditsCurrency/></i>
                 <p>Рассрочка</p>
             </div>
             <div className={c.singleicon}>
-                <i class={c.FcOnlineSupport}><FcOnlineSupport/></i>
+                <i className={c.FcOnlineSupport}><FcOnlineSupport/></i>
                 <p>Профессиональная <br /> консультатсия </p>
+                
             </div>
         </div>
     )

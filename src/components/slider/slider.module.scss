@@ -1,22 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "../../scss/variables.scss";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.carousel{
-    width: 100%;
-    position: relative;
-    .button{
-        all: unset;
-        padding: 10px 25px;
-        border-radius: 7px;
-        cursor: pointer;
-        background-color: red;
-        color: white;
-        position: absolute;
-        top: 50%;
-        // bottom: 70px;
-        left: 30%;
-        z-index: 123;
-    }
+.carousel {
+	position: relative;
+	width: 100%;
+	.carouselDiv {
+		height: 400px;
+		.slide {
+			height: 400px;
+			position: relative;
+			img {
+				height: 100%;
+			}
+		}
+		h1 {
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			font-size: 48px;
+			color: $light;
+			text-transform: uppercase;
+		}
+		p {
+			position: absolute;
+			top: 40%;
+			left: 5%;
+			color: $light;
+			font-size: 1.3rem;
+		}
+		a {
+			position: absolute;
+			bottom: 20%;
+			left: 5%;
+			z-index: 123;
+			width: 20%;
+		}
+	}
 }

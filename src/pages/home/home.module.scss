@@ -2,7 +2,7 @@
 	// height: 100vh;
 	.header {
 		width: 90%;
-		margin: 5% auto;
+		margin: 3% auto;
 		display: flex;
 		gap: 1rem;
 		align-items: flex-start;
@@ -12,6 +12,19 @@
 		}
 		.slider {
 			width: 74%;
+		}
+	}
+	.cards {
+		padding: 3% 0;
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 1rem 0;
+		.card {
+			width: 19%;
 		}
 	}
 }

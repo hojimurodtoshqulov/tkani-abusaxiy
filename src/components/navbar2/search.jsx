@@ -56,7 +56,7 @@ const Search = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button className={c.searchicon}>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </button>
         {showResults && (
           <div className={c.searchResult}>

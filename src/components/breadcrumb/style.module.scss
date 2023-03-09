@@ -1,0 +1,27 @@
+.breadcrumb {
+  display: flex;
+  gap: 5px;
+  padding: 10px 0;
+  color: #00000073;
+
+  text-transform: capitalize;
+
+  span {
+    margin-left: 5px;
+  }
+
+  a {
+    padding: 0 4px;
+    border-radius: 4px;
+  }
+
+  a:hover {
+    color: rgba(0, 0, 0, 0.88);
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}
+
+.active {
+  color: #000000e0;
+  pointer-events: none;
+}
