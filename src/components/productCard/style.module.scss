@@ -78,6 +78,24 @@ $cardPadding: 15px;
   overflow: hidden;
 }
 
+.extraInfo {
+  padding: 5px 0;
+  margin: 5px 0;
+  border-top: 1px dashed #8080806a;
+  border-bottom: 1px dashed #8080806a;
+  font-size: 12px;
+}
+
+.extraInfoItem {
+  display: block;
+  line-height: 1.2rem;
+  font-weight: 600;
+
+  span {
+    color: #e93232;
+  }
+}
+
 .cardBottom {
   display: flex;
   justify-content: space-between;

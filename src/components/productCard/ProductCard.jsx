@@ -5,8 +5,16 @@ import { BsCartPlus } from "react-icons/bs";
 
 
 
-function ProductCard({ imgUrl, title, price, priceUnit, slug, isNew }) {
 function ProductCard({ imageUrl, title, price, priceUnit, slug = "", isNew }) {
+function ProductCard({
+  imageUrl,
+  title,
+  madeIn,
+  size,
+  price,
+  slug = "",
+  isNew,
+}) {
   return (
     <div className={styles.card}>
       <div>
@@ -27,12 +35,20 @@ function ProductCard({ imageUrl, title, price, priceUnit, slug = "", isNew }) {
             <img src={imageUrl} alt={title} />
           </div>
           <span className={styles.title}>{title}</span>
+          <div className={styles.extraInfo}>
+            <span className={styles.extraInfoItem}>
+              <span>width/height:</span> {size}
+            </span>
+            <span className={styles.extraInfoItem}>
+              <span>made in:</span> {madeIn}
+            </span>
+          </div>
         </Link>
       </div>
       <div className={styles.cardBottom}>
         <div className={styles.priceWrap}>
           <span className={styles.priceNumber}>{price}</span>
-          <span className={styles.priceUnit}>{priceUnit}</span>
+          <span className={styles.priceUnit}>uzs</span>
         </div>
         <button className={styles.oneClickBtn}>One click buy</button>
       </div>

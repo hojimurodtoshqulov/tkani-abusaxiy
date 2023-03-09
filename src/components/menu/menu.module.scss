@@ -1,0 +1,41 @@
+@import "../../scss/variables.scss";
+
+.menu {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	&__link {
+		height: 50px;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 2%;
+		color: blue;
+		&:hover {
+			border-color: blue;
+			color: rgba(0, 0, 255, 0.58);
+		}
+		&:hover p {
+			color: blue;
+		}
+		&:hover img {
+			opacity: 0.8;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		h4 {
+			width: 70%;
+			text-align: left;
+		}
+		p {
+			color: #ddd;
+		}
+	}
+}
