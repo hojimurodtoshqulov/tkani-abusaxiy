@@ -1,19 +1,16 @@
-
 import React from "react";
 import c from "./style.module.scss";
 import dataCards from "../../data/cards.json";
 import ProductCard from "../productCard/ProductCard";
 
-
-export default function Owlcarousel(){
-
-    return(
-        <div className={c.owlcarousel}>
-            <div className={c.owl_title}>
-            <div className={c.line1}></div>
-            <h1>Game zone</h1>
-            <div className={c.line2}></div>
-            </div>
+export default function Owlcarousel() {
+	return (
+		<div className={c.owlcarousel}>
+			<div className={c.owl_title}>
+				<div className={c.line1}></div>
+				<h1>Game zone</h1>
+				<div className={c.line2}></div>
+			</div>
 
 			<div className={c.sectionSlides}>
 				<div className={c.slider}>
