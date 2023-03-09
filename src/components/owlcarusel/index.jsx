@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductCard from '../productCard/ProductCard';
 import c from './style.module.scss';
 
 
@@ -157,10 +158,11 @@ export default function Owlcarousel(){
 				<div className={c.slide_track}>
 					{dataLogos?.map((item, index) => (
 						<div className={c.slide} key={index}>
-							<img src={item.img} alt="skills logos" />
-							<h3>{item.title}</h3>
+							{/* <img src={item.img} alt="skills logos" /> */}
+							{/* <h3>{item.title}</h3>
 							<p> {item.description} </p>
-							<button> {item.btnTitle} </button>
+							<button> {item.btnTitle} </button> */}
+							<ProductCard/>
 						</div>
 					))}
 				</div>

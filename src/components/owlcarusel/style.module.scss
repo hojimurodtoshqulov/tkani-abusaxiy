@@ -17,12 +17,12 @@
         align-items: center;
         .line1{
             background-color: #fff;
-            width: 20%;
+            width: 15%;
             height: 2px;
         }
         .line2{
             background-color: #fff;
-            width: 60%;
+            width: 65%;
             height: 2px;
         }
         h1{
@@ -36,7 +36,6 @@
 	place-items: center;
 	position: relative;
 	margin-top: 5%;
-	border: 1px solid #060F42;
 	padding: 0;
 
 	.slider {
@@ -46,8 +45,6 @@
 		width: 100%;
 		overflow: hidden;
 		.slide_track {
-			border: 1px solid #060F42;
-
 			height: 100%;
 			display: flex;
 			width: calc(250px * 18);
@@ -59,27 +56,17 @@
 		.slide {
 			margin-right: 10px;
 			height: 100%;
-			width: 350px;
+			width: 420px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			padding: 10px;
 			perspective: 100px;
-			border: 1px solid #060F42;
 			&:hover {
 				background: #060f42ab;
 			}
 		}
-		img {
-			width: 100%;
-			max-height: 50%;
-			transition: transform 0.5s;
-			&:hover {
-				transform: translateZ(15px);
-				cursor: pointer;
-			}
-		}
+		
 	}
 }
 
