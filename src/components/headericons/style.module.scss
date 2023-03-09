@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headericon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    .singleicon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        i{
+            font-size: 50px;
+            color: #060F42;
+        }
+        p{
+            color: #060F42;
+        }
+    }
+}

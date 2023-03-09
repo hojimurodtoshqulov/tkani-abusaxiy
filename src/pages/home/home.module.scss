@@ -1,3 +1,17 @@
-.home{
-    height: 100vh;
+.home {
+	// height: 100vh;
+	.header {
+		width: 90%;
+		margin: 5% auto;
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+		justify-content: space-between;
+		.menu {
+			width: 25%;
+		}
+		.slider {
+			width: 74%;
+		}
+	}
 }

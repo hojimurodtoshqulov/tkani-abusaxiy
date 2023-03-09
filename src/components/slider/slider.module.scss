@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel{
+    width: 100%;
+    position: relative;
+    .button{
+        all: unset;
+        padding: 10px 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 50%;
+        // bottom: 70px;
+        left: 30%;
+        z-index: 123;
+    }
+}

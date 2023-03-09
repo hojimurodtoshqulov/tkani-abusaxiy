@@ -13,7 +13,7 @@ function ProductCard({
   isNew,
 }) {
   return (
-    <div style={{ maxWidth: "230px" }} className={styles.card}>
+    <div className={styles.card}>
       <div>
         {isNew && (
           <span className={styles.new_label}>Новинка &nbsp;&nbsp;&nbsp;</span>
