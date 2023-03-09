@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"; 
 import { useEffect, useState } from "react";
-import ProductCard from "./components/productCard/ProductCard";
-import Home from "./pages/home/home";
-import { Layout } from "./components/Layout/layout";
+// import ProductCard from "../components/productCard/ProductCard";
+import Home from "../pages/home/home";
+import { Layout } from "../components/Layout/layout";
 
 function App() {
   return (
