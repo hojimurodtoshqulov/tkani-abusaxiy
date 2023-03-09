@@ -29,6 +29,7 @@ const Home = () => {
 				{cardsData.products?.map((item, index) => (
 					<div className={c.card}>
 						<ProductCard
+							key={index}
 							imageUrl={`https://picsum.photos/400/400?random=${item.id}`}
 							title={item.title}
 							price={item.price}

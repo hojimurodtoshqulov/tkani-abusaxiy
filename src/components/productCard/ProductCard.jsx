@@ -5,7 +5,6 @@ import { BsCartPlus } from "react-icons/bs";
 
 
 
-function ProductCard({ imageUrl, title, price, priceUnit, slug = "", isNew }) {
 function ProductCard({
   imageUrl,
   title,
@@ -55,5 +54,5 @@ function ProductCard({
     </div>
   );
 }
-}
+
 export default ProductCard
