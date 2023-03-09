@@ -1,5 +1,6 @@
 import React from 'react';
 import c from './style.module.scss';
+import {Link} from "react-router-dom";
 import {HiWrenchScrewdriver} from 'react-icons/hi2';
 import {TbCertificate} from 'react-icons/tb';
 import {AiOutlineSafetyCertificate} from 'react-icons/ai';
@@ -11,31 +12,31 @@ import {GiCreditsCurrency} from 'react-icons/gi';
 export default function Headericon() {
     return (
         <div className={c.headericon}>
-            <div className={c.singleicon}>
+            <Link className={c.singleicon}>
                 <i className={c.HiWrenchScrewdriver}><HiWrenchScrewdriver/></i>
-                <p>Бесплатная <br /> сборка</p>
-            </div>
-            <div className={c.singleicon}>
+                <p>Бесплатная сборка</p>
+            </Link>
+            <Link className={c.singleicon}>
                 <i className={c.TbCertificate}><TbCertificate/></i>
-                <p>Официальная <br /> гарантия</p>
-            </div>
-            <div className={c.singleicon}>
+                <p>Официальная гарантия</p>
+            </Link>
+            <Link className={c.singleicon}>
                 <i className={c.AiOutlineSafetyCertificate}><AiOutlineSafetyCertificate/></i>
-                <p>Лучшая <br /> цена</p>
-            </div>
-            <div className={c.singleicon}>
+                <p>Лучшая цена</p>
+            </Link>
+            <Link className={c.singleicon}>
                 <i className={c.BiCalendarStar}><BiCalendarStar/></i>
-                <p>Бесплатная <br /> доставка</p>
-            </div>
-            <div className={c.singleicon}>
+                <p>Бесплатная доставка</p>
+            </Link>
+            <Link className={c.singleicon}>
                 <i className={c.GiCreditsCurrency}><GiCreditsCurrency/></i>
                 <p>Рассрочка</p>
-            </div>
-            <div className={c.singleicon}>
+            </Link>
+            <Link className={c.singleicon}>
                 <i className={c.FcOnlineSupport}><FcOnlineSupport/></i>
-                <p>Профессиональная <br /> консультатсия </p>
+                <p>Профессиональная консультатсия </p>
                 
-            </div>
+            </Link>
         </div>
     )
 }
