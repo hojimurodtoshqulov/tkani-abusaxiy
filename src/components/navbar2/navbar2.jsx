@@ -14,7 +14,7 @@ const Navbar2 = () => {
                     <Link to={'/'}><img src={Logo} alt="logo" /></Link>
                 </div>
 
-                <div className={c.bars}><i class="fa-solid fa-bars"></i></div>
+                <div className={c.bars}><i className="fa-solid fa-bars"></i></div>
 
                 <Search /> 
                 <Tel />

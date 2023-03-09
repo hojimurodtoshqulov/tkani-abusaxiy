@@ -4,10 +4,10 @@ const Network = () => {
     return (
         <div>
             <div className={c.network}>
-                <a href=""><i class="fa-brands fa-instagram"></i>&nbsp; </a>
-                <a href=""><i class="fa-brands fa-telegram"></i>&nbsp;</a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i>&nbsp; </a>
-                <a href=""><i class="fa-solid fa-envelope"></i>&nbsp; </a>
+                <a href=""><i className="fa-brands fa-instagram"></i>&nbsp; </a>
+                <a href=""><i className="fa-brands fa-telegram"></i>&nbsp;</a>
+                <a href=""><i className="fa-brands fa-whatsapp"></i>&nbsp; </a>
+                <a href=""><i className="fa-solid fa-envelope"></i>&nbsp; </a>
             </div>
         </div>
     )
