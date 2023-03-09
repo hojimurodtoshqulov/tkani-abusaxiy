@@ -8,7 +8,6 @@ export default function Button({ btnTitle, btnClassName, link }) {
 					btnClassName === "buttonDenger" ? (scss.button && scss.buttonDenger) : scss.button
 				}
 			>
-				{/* {console.log(btnClassName)} */}
 				{btnTitle}
 			</button>
 		</Link>
