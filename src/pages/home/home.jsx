@@ -24,7 +24,7 @@ const Home = () => {
 					/> */}
 				</div>
 			</div>
-
+{/* <Button  btnTitle={"bla bla"} /> */}
 			<div className={c.cards}>
 				{cardsData.products?.map((item, index) => (
 					<div className={c.card}>
