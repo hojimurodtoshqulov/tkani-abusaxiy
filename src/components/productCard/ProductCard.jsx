@@ -12,7 +12,7 @@ function ProductCard({
 	slug = "",
 	isNew,
 }) {
-  console.log('Salom');
+console.log("hello");
 	return (
 		<div className={styles.card}>
 			<div>
