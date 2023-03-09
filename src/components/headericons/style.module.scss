@@ -8,17 +8,18 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
+    padding: 20px 0;
+    gap: 10px;
     .singleicon{
         display: flex;
         flex-direction: column;
         justify-content: center;
         i{
-            font-size: 50px;
+            font-size: 30px;
             color: #060F42;
         }
         p{
+            // width: 20%;
             color: #060F42;
         }
     }
