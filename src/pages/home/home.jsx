@@ -17,11 +17,16 @@ const Home = () => {
 				<div className={c.slider}>
 					<Headercarusel />
 					<Headericon />
-					{/* <Button
+					<Button
 						btnTitle={"bla bla"}
 						btnClassName={"button"}
 						link={"/blabla"}
-					/> */}
+					/>
+					<Button
+						btnTitle={"bla bla"}
+						btnClassName={"buttonBuy"}
+						link={"/blabla"}
+					/>
 				</div>
 			</div>
 {/* <Button  btnTitle={"bla bla"} /> */}

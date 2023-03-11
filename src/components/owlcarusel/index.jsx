@@ -11,7 +11,6 @@ export default function Owlcarousel() {
 				<h1>Game zone</h1>
 				<div className={c.line2}></div>
 			</div>
-
 			<div className={c.sectionSlides}>
 				<div className={c.slider}>
 					<div className={c.slide_track}>
