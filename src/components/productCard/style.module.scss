@@ -11,6 +11,7 @@ $cardPadding: 15px;
   padding: $cardPadding;
   color: #060f42;
   transition: 0.3s all;
+  min-height: 100%;
 
   &:hover {
     background-color: #060f42;
@@ -126,5 +127,4 @@ $cardPadding: 15px;
 	&:active {
 		transform: scale(0.96);
 	}
-
 }
