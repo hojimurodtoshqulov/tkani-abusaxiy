@@ -11,42 +11,45 @@ import Category from "../../components/category/category";
 
 
 const Home = () => {
-	console.log("db>>>", cardsData.products);
-	return (
-		<div className={c.home}>
-			<div className={c.header}>
-				<div className={c.menu}>
-					<Menu />
-				</div>
-				<div className={c.slider}>
-					<Headercarusel />
-					<Headericon />
-					{/* <Button
-						btnTitle={"bla bla"}
-						btnClassName={"button"}
-						link={"/blabla"}
-					/> */}
-				</div>
-			</div>
-			{/* <Button  btnTitle={"bla bla"} /> */}
-			
-			<div className={c.cards}>
-				{cardsData.products?.map((item, index) => (
-					<div className={c.card}>
-						<ProductCard
-							key={index}
-							imageUrl={`https://picsum.photos/400/400?random=${item.id}`}
-							title={item.title}
-							price={item.price}
-							madeIn="China"
-							size="230sm/200sm"
-							isNew
-						/>
-					</div>
-				))}
-				{/* <ProductCard /> */}
+  console.log("db>>>", cardsData.products);
+  return (
+    <div className={c.home}>
+      <div className={c.header}>
+        <div className={c.menu}>
+          <Menu />
+        </div>
+        <div className={c.slider}>
+          <Headercarusel />
+          <Headericon />
+          <Button
+            btnTitle={"bla bla"}
+            btnClassName={"button"}
+            link={"/blabla"}
+          />
+          <Button
+            btnTitle={"bla bla"}
+            btnClassName={"buttonBuy"}
+            link={"/blabla"}
+          />
+        </div>
+      </div>
+      {/* <Button  btnTitle={"bla bla"} /> */}
+      <div className={c.cards}>
+        {cardsData.products?.map((item, index) => (
+        //   <div className={c.card}>
+            <ProductCard
+              imageUrl={`https://picsum.photos/400/400?random=${item.id}`}
+              title={item.title}
+              price={item.price}
+              madeIn="China"
+              size="230sm/200sm"
+              isNew
+            />
+        //   </div>
+        ))}
+        {/* <ProductCard /> */}
 
-				{/* <ProductCard
+        {/* <ProductCard
 					imageUrl="https://picsum.photos/400/400?random=1"
 					title=" Dak ( suv otqazmidi) Tarkibi : 65% paxta 35% poliesterEni: 180cm"
 					price={2323}
@@ -54,15 +57,13 @@ const Home = () => {
 					size="230sm/200sm"
 					isNew
 				/> */}
-			</div>
+      </div>
 
-			<div className={c.carousel}>
-				<Owlcarousel />
-					<Category />
-
-				</div>
-		</div>
-	);
+      <div className={c.carousel}>
+        <Owlcarousel />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

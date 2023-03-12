@@ -53,16 +53,15 @@
 		}
 		.slide {
 			margin-right: 15px;
-			height: 100%;
 			width: 420px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: flex-start;
-			perspective: 100px;
-			&:hover {
-				background: #060f42ab;
-			}
+			// display: flex;
+			// flex-direction: column;
+			// align-items: center;
+			// justify-content: flex-start;
+			// perspective: 100px;
+			// &:hover {
+			// 	background: #060f42ab;
+			// }
 		}
 	}
 }

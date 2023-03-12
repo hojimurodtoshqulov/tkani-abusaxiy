@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
 import { BsCartPlus } from "react-icons/bs";
+import Button from "../button/button";
 
 
 
@@ -50,7 +51,11 @@ function ProductCard({
 					<span className={styles.priceNumber}>{price}</span>
 					<span className={styles.priceUnit}>uzs</span>
 				</div>
-				<button className={styles.oneClickBtn}>One click buy</button>
+				<Button
+					btnTitle={"One click buy"}
+					btnClassName={"buttonBuy"}
+					link={"/blabla"}
+				/>
 			</div>
 		</div>
 	);
