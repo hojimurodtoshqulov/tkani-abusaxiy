@@ -10,55 +10,64 @@ import img6 from "../../media/zakaz.jpg";
 import img7 from "../../media/dostavka.jpg";
 import img8 from "../../media/info.jpg";
 import img9 from "../../media/all.jpg";
+import { AiOutlineHome,AiOutlineSkin } from "react-icons/ai";
+import { GiExplosiveMaterials } from "react-icons/gi";
+import { RxScissors } from "react-icons/rx";
+import { SlBadge } from "react-icons/sl";
+import { BsTruck } from "react-icons/bs";
+import { RiLuggageCartLine, RiTruckLine } from "react-icons/ri";
+import { IoBarChartOutline } from "react-icons/io5";
+import { FaBuffer,FaOpencart } from "react-icons/fa";
+
 const Menu = () => {
 	const logosData = [
 		{
-			img: img1,
+			img: <GiExplosiveMaterials />,
 			link: "/",
 			title: "ТКАНИ ДЛЯ ПЛАТЬЯ",
 			r_icon: <i className="fa-solid fa-angle-right"></i>,
 		},
 		{
-			img: img2,
+			img: <AiOutlineHome />,
 			link: "/",
 			title: "ТКАНИ ДЛЯ ДОМА",
 			r_icon: <i className="fa-solid fa-angle-right"></i>,
 		},
 		{
-			img: img3,
+			img: <RxScissors />,
 			link: "/",
 			title: "ФУРНИТУРА",
 			r_icon: <i className="fa-solid fa-angle-right"></i>,
 		},
 		{
-			img: img4,
+			img: <AiOutlineSkin />,
 			link: "/",
 			title: "ГОТОВЫЕ ФАСОНЫ",
 			r_icon: <i className="fa-solid fa-angle-right"></i>,
 		},
 		{
-			img: img5,
+			img: <SlBadge />,
 			link: "/",
 			title: "НОВИНКИ",
 			r_icon: <i className="fa-solid fa-angle-right"></i>,
 		},
 		{
-			img: img6,
+			img: <FaOpencart />,
 			link: "/",
 			title: "ЗАКАЗАТЬ",
 		},
 		{
-			img: img7,
+			img: <BsTruck />,
 			link: "/",
 			title: "ДОСТАВКА ПО ВСЕМУ МИРУ",
 		},
 		{
-			img: img8,
+			img: <IoBarChartOutline />,
 			link: "/",
 			title: "БОЛЬШЕ ИНФОРМАЦИИ",
 		},
 		{
-			img: img9,
+			img: <FaBuffer />,
 			link: "/",
 			title: "ВСЕ ТОВАРЫ",
 			r_icon: <i className="fa-solid fa-angle-right"></i>,
@@ -68,12 +77,14 @@ const Menu = () => {
 		<div className={scss.menu}>
 			{logosData?.map((item, index) => (
 				<Link to={item.link} key={index} className={scss.menu__link}>
-					<img
+					{/* <img
 						className={scss.menu__link_img}
 						src={item.img}
-						alt="oogos image"
-					/>{" "}
-					<h4> {item.title} </h4> <p>{item.r_icon}</p>
+						alt="logos image"
+					/>{" "} */}
+					<h2>{item.img}</h2>
+					<h4> {item.title} </h4>
+					<p>{item.r_icon}</p>
 				</Link>
 			))}
 		</div>

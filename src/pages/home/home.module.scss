@@ -4,7 +4,8 @@
 		width: 90%;
 		margin: 3% auto;
 		display: flex;
-		gap: 1rem;
+		flex-wrap: wrap;
+		// gap: 1rem;
 		align-items: flex-start;
 		justify-content: space-between;
 		.menu {
@@ -12,6 +13,12 @@
 		}
 		.slider {
 			width: 74%;
+		}
+		.breadcrumb {
+			width: 25%;
+		}
+		.headerIcons {
+			width: 72%;
 		}
 	}
 	.cards {

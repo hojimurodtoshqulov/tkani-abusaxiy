@@ -6,6 +6,7 @@ import ProductCard from "../../components/productCard/ProductCard";
 import Headercarusel from "../../components/slider/slider";
 import c from "./home.module.scss";
 import cardsData from "../../data/cards.json";
+import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 const Home = () => {
 	console.log("db>>>", cardsData.products);
 	return (
@@ -16,8 +17,7 @@ const Home = () => {
 				</div>
 				<div className={c.slider}>
 					<Headercarusel />
-					<Headericon />
-					<Button
+					{/* <Button
 						btnTitle={"bla bla"}
 						btnClassName={"button"}
 						link={"/blabla"}
@@ -26,10 +26,17 @@ const Home = () => {
 						btnTitle={"bla bla"}
 						btnClassName={"buttonBuy"}
 						link={"/blabla"}
-					/>
+					/> */}
+				</div>
+				<div className={c.breadcrumb}>
+					<Breadcrumb />
+					<h3>breadcrumb</h3>
+				</div>
+				<div className={c.headerIcons}>
+					<Headericon />
 				</div>
 			</div>
-{/* <Button  btnTitle={"bla bla"} /> */}
+			{/* <Button  btnTitle={"bla bla"} /> */}
 			<div className={c.cards}>
 				{cardsData.products?.map((item, index) => (
 					<div className={c.card}>
