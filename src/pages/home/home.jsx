@@ -62,6 +62,7 @@ const Home = () => {
       <div className={c.carousel}>
         <Owlcarousel />
       </div>
+      <Category />
     </div>
   );
 };
