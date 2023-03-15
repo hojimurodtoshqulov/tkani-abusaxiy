@@ -1,6 +1,6 @@
 import React from 'react'
 import c from "./navbar2.module.scss";
-import Logo from "../../media/Logo.png"
+import Logo from "../../media/tkani-logo.png"
 import { Link } from 'react-router-dom';
 import Korzina from "../../media/korzinaicon.png"
 import { Tel } from '../footer/network';

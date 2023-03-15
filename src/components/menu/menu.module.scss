@@ -13,16 +13,13 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 2%;
-		color: blue;
+		color: #08155b;
 		&:hover {
-			border-color: blue;
-			color: rgba(0, 0, 255, 0.58);
+			border-color: #08155b;
+			color: #08145bb7;
 		}
 		&:hover p {
-			color: blue;
-		}
-		&:hover img {
-			opacity: 0.8;
+			color: #08145bb7;
 		}
 		img {
 			width: 40px;
@@ -33,6 +30,7 @@
 		h4 {
 			width: 70%;
 			text-align: left;
+			font-weight: 500;
 		}
 		p {
 			color: #ddd;

@@ -1,30 +1,68 @@
 .home {
-	// height: 100vh;
 	.header {
 		width: 90%;
 		margin: 3% auto;
 		display: flex;
-		gap: 1rem;
-		align-items: flex-start;
 		justify-content: space-between;
-		.menu {
+		align-items: flex-start;
+		&__column1 {
+			height: 100%;
 			width: 25%;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			.breadcrumb {
+				position: absolute;
+				top: -7.5%;
+				left: 0;
+				// border: 1px solid red;
+				width: 200%;
+				color: #666;
+				p {
+					&:hover {
+						color: #00093c;
+						cursor: pointer;
+					}
+				}
+			}
+			.menu {
+				// border: 1px solid red;
+				width: 100%;
+			}
 		}
-		.slider {
+		&__column2 {
+			height: 100%;
 			width: 74%;
+			.slider {
+				width: 100%;
+			}
+			.headerIcons {
+				width: 90%;
+			}
 		}
 	}
 	.cards {
 		padding: 3% 0;
 		width: 90%;
 		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 1rem 0;
-		.card {
-			width: 19%;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1rem;
+
+		@media (max-width: 1300px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		@media (max-width: 1060px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media (max-width: 785px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: 585px) {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 }

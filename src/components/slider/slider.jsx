@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "antd";
 import c from "./slider.module.scss";
 import Button from "../button/button";
+import tkaniVideo1 from "../../media/videos/tkani.mp4";
 const contentStyle = {
 	width: "100%",
 	height: "70vh",
@@ -16,11 +17,13 @@ export default function Headercarusel() {
 		<div className={c.carousel}>
 			<Carousel autoplay className={c.carouselDiv}>
 				<div className={c.slide}>
-					<img
+					{/* style={contentStyle} */}
+					<video className={c.video} style={contentStyle} src={tkaniVideo1} muted autoPlay loop></video>
+					{/* <img
 						style={contentStyle}
 						src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg"
 						alt=""
-					/>
+					/> */}
 					<h1>tkani dlya platya</h1>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<Button
