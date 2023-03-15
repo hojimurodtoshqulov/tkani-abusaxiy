@@ -3,6 +3,9 @@ import { Carousel } from "antd";
 import c from "./slider.module.scss";
 import Button from "../button/button";
 import tkaniVideo1 from "../../media/videos/tkani.mp4";
+import pastel from "../../media/slider-h2.jpg";
+import furnitura from "../../media/furnitura2.png";
+import readyFashion from "../../media/asd.jpg";
 const contentStyle = {
 	width: "100%",
 	height: "70vh",
@@ -17,13 +20,7 @@ export default function Headercarusel() {
 		<div className={c.carousel}>
 			<Carousel autoplay className={c.carouselDiv}>
 				<div className={c.slide}>
-					{/* style={contentStyle} */}
 					<video className={c.video} style={contentStyle} src={tkaniVideo1} muted autoPlay loop></video>
-					{/* <img
-						style={contentStyle}
-						src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg"
-						alt=""
-					/> */}
 					<h1>tkani dlya platya</h1>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<Button
@@ -35,10 +32,10 @@ export default function Headercarusel() {
 				<div className={c.slide}>
 					<img
 						style={contentStyle}
-						src="https://cdn.pixabay.com/photo/2017/11/28/13/07/sunset-2983614__340.jpg"
+						src={pastel}
 						alt=""
 					/>
-					<h1>bla bla</h1>
+					<h1>Tkani dlya doma</h1>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<Button
 						btnTitle={"bla Button"}
@@ -49,10 +46,10 @@ export default function Headercarusel() {
 				<div className={c.slide}>
 					<img
 						style={contentStyle}
-						src="https://cdn.pixabay.com/photo/2015/10/30/20/13/boat-1014711__340.jpg"
+						src={furnitura}
 						alt=""
 					/>
-					<h1>furnitura dlya platya</h1>
+					<h1>furnitura </h1>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<Button
 						btnTitle={"Banner Button"}
@@ -63,10 +60,10 @@ export default function Headercarusel() {
 				<div className={c.slide}>
 					<img
 						style={contentStyle}
-						src="https://cdn.pixabay.com/photo/2020/04/15/06/55/vietnam-5045344__340.jpg"
+						src={readyFashion}
 						alt=""
 					/>
-					<h1>gatovi tkani dlya platya</h1>
+					<h1>gatovi fasoni</h1>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<Button
 						btnTitle={"Banner Button"}
