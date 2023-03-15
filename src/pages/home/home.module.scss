@@ -1,11 +1,9 @@
 .home {
-	// height: 100vh;
 	.header {
 		width: 90%;
 		margin: 3% auto;
 		display: flex;
 		flex-wrap: wrap;
-		// gap: 1rem;
 		align-items: flex-start;
 		justify-content: space-between;
 		.menu {
@@ -16,8 +14,12 @@
 		}
 		.breadcrumb {
 			width: 25%;
+			// border: 1px solid red;
+			margin: auto 0;
 		}
 		.headerIcons {
+			// border: 1px solid red;
+
 			width: 72%;
 		}
 	}
@@ -25,13 +27,24 @@
 		padding: 3% 0;
 		width: 90%;
 		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 1rem 0;
-		.card {
-			width: 19%;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1rem;
+
+		@media (max-width: 1300px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		@media (max-width: 1060px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media (max-width: 785px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: 585px) {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 }

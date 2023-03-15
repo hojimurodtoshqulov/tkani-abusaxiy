@@ -4,6 +4,8 @@ import styles from "./style.module.scss";
 import { BsCartPlus } from "react-icons/bs";
 import Button from "../button/button";
 
+
+
 function ProductCard({
 	imageUrl,
 	title,
@@ -12,6 +14,7 @@ function ProductCard({
 	price,
 	slug = "",
 	isNew,
+  // console.log("Something");
 }) {
 	return (
 		<div className={styles.card}>
@@ -58,4 +61,5 @@ function ProductCard({
 	);
 }
 
-export default ProductCard;
+export default ProductCard
+

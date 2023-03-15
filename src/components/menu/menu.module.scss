@@ -13,13 +13,13 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 2%;
-		color: blue;
+		color: #08155b;
 		&:hover {
-			border-color: blue;
-			color: rgba(0, 0, 255, 0.58);
+			border-color: #08155b;
+			color: #08155b;
 		}
 		&:hover p {
-			color: blue;
+			color: #08155b;
 		}
 		&:hover img {
 			opacity: 0.8;
