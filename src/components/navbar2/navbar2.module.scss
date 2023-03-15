@@ -3,111 +3,119 @@ $linkColor: #f4f8fb;
 $blue: #01579b;
 
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+	background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
+	background-color: #d6dee1;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
+	background-color: #d6dee1;
+	border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #c4c4c4;
-  border-radius: 20px;
-  border: 2px solid transparent;
-  background-clip: content-box;
+	background-color: #c4c4c4;
+	border-radius: 20px;
+	border: 2px solid transparent;
+	background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #a0a0a0;
+	background-color: #a0a0a0;
 }
 
 .navbar2 {
-  width: 100%;
-  background-color: white;
-  // border-bottom: 1px solid rgba(0, 0, 0, 0.55);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  padding: 1.5rem 0;
+	width: 100%;
+	background-color: white;
+	// border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+	padding: 1.5rem 0;
 
-  &__main {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	&__main {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.logo {
+			width: 10%;
+			a {
+				width: 100%;
+				img {
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.bars {
+			i {
+				font-size: 2rem;
+				color: $darkblue;
+				cursor: pointer;
+				padding: 0 1rem;
+			}
+		}
 
-    .bars {
-      i {
-        font-size: 2rem;
-        color: $darkblue;
-        cursor: pointer;
-        padding: 0 1rem;
-      }
-    }
+		.form {
+			width: 60%;
+			position: relative;
 
-    .form {
-      width: 60%;
-      position: relative;
+			.searchResult {
+				position: absolute;
+				top: calc(100% + 2px);
+				left: 0;
+				width: 100%;
+				background-color: #fff;
+				border-radius: 10px;
+				-webkit-box-shadow: 0px 1px 10px 0px rgba(1, 87, 155, 0.2);
+				-moz-box-shadow: 0px 1px 10px 0px rgba(1, 87, 155, 0.2);
+				box-shadow: 0px 1px 10px 0px rgba(1, 87, 155, 0.2);
+				overflow: auto;
+				max-height: 70vh;
+				z-index: 12345;
 
-      .searchResult {
-        position: absolute;
-        top: calc(100% + 2px);
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        border-radius: 10px;
-        -webkit-box-shadow: 0px 1px 10px 0px rgba(1, 87, 155, 0.2);
-        -moz-box-shadow: 0px 1px 10px 0px rgba(1, 87, 155, 0.2);
-        box-shadow: 0px 1px 10px 0px rgba(1, 87, 155, 0.2);
-        overflow: auto;
-        max-height: 70vh;
-z-index: 12345;
-     
+				&Head {
+					padding: 0.5rem 1rem;
 
-        &Head {
-          padding: 0.5rem 1rem;
+					p {
+						font-size: 14px;
+						line-height: 24px;
+						color: #858997;
+						font-weight: 500;
+					}
+				}
+			}
+			input {
+				width: 100%;
+				padding: 1rem;
+				font-size: 1rem;
+				background: rgb(255, 255, 255);
+				border: 1px solid #e6e6e6;
+				border-radius: 4px;
+			}
 
-          p {
-            font-size: 14px;
-            line-height: 24px;
-            color: #858997;
-            font-weight: 500;
-          }
-        }
-      }
-      input {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
-        background: rgb(255, 255, 255);
-        border: 1px solid #e6e6e6;
-        border-radius: 4px;
-      }
-
-      .searchicon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $blue;
-        border: 0;
-        border-radius: 0 4px 4px 0;
-        cursor: pointer;
-        i {
-          color: $linkColor;
-          font-size: 1.5rem;
-        }
-      }
-    }
-    .korzina {
-      cursor: pointer;
-    }
-  }
+			.searchicon {
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 100%;
+				width: 60px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $blue;
+				border: 0;
+				border-radius: 0 4px 4px 0;
+				cursor: pointer;
+				i {
+					color: $linkColor;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.korzina {
+			cursor: pointer;
+		}
+	}
 }
