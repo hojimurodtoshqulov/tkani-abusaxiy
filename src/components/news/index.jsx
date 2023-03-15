@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "./carousel";
 import c from "./style.module.scss";
+import Category from "../category/category"
 import newsBgVideo from "../../media/videos/tkani-video.mp4";
 export default function News() {
 	return (
@@ -11,6 +12,7 @@ export default function News() {
 				<div className={c.line2}></div>
 			</div>
 			<Carousel />
+			<Category />
 			<video src={newsBgVideo} muted autoPlay loop></video>
 		</div>
 	);
