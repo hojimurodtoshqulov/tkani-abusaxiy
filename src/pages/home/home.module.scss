@@ -3,24 +3,42 @@
 		width: 90%;
 		margin: 3% auto;
 		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
 		justify-content: space-between;
-		.menu {
+		align-items: flex-start;
+		&__column1 {
+			height: 100%;
 			width: 25%;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			.breadcrumb {
+				position: absolute;
+				top: -7.5%;
+				left: 0;
+				// border: 1px solid red;
+				width: 200%;
+				color: #666;
+				p {
+					&:hover {
+						color: #00093c;
+						cursor: pointer;
+					}
+				}
+			}
+			.menu {
+				// border: 1px solid red;
+				width: 100%;
+			}
 		}
-		.slider {
+		&__column2 {
+			height: 100%;
 			width: 74%;
-		}
-		.breadcrumb {
-			width: 25%;
-			// border: 1px solid red;
-			margin: auto 0;
-		}
-		.headerIcons {
-			// border: 1px solid red;
-
-			width: 72%;
+			.slider {
+				width: 100%;
+			}
+			.headerIcons {
+				width: 90%;
+			}
 		}
 	}
 	.cards {

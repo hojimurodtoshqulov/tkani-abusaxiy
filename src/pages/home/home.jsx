@@ -12,31 +12,24 @@ const Home = () => {
 	return (
 		<div className={c.home}>
 			<div className={c.header}>
-				<div className={c.menu}>
-					<Menu />
+				<div className={c.header__column1}>
+					<div className={c.breadcrumb}>
+						<Breadcrumb />
+						<p>home/</p>
+					</div>
+					<div className={c.menu}>
+						<Menu />
+					</div>
 				</div>
-				<div className={c.slider}>
-					<Headercarusel />
-					{/* <Button
-						btnTitle={"bla bla"}
-						btnClassName={"button"}
-						link={"/blabla"}
-					/>
-					<Button
-						btnTitle={"bla bla"}
-						btnClassName={"buttonBuy"}
-						link={"/blabla"}
-					/> */}
-				</div>
-				<div className={c.breadcrumb}>
-					<Breadcrumb />
-					<h3>breadcrumb</h3>
-				</div>
-				<div className={c.headerIcons}>
-					<Headericon />
+				<div className={c.header__column2}>
+					<div className={c.slider}>
+						<Headercarusel />
+					</div>
+					<div className={c.headerIcons}>
+						<Headericon />
+					</div>
 				</div>
 			</div>
-			{/* <Button  btnTitle={"bla bla"} /> */}
 			<div className={c.carousel}>
 				<News />
 			</div>
