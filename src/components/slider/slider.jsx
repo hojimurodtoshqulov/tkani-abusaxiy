@@ -1,8 +1,9 @@
+// import { Carousel } from "antd";
 import React from "react";
-import { Carousel } from "antd";
 import c from "./slider.module.scss";
 import Button from "../button/button";
 import tkaniVideo1 from "../../media/videos/tkani.mp4";
+import Slider from "react-slick";
 const contentStyle = {
 	width: "100%",
 	height: "70vh",
@@ -12,18 +13,23 @@ const contentStyle = {
 	background: "#364d79",
 };
 
+const settings = {
+	dots: true,
+	infinite: true,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1
+  };
+
 export default function Headercarusel() {
+
 	return (
 		<div className={c.carousel}>
-			<Carousel autoplay className={c.carouselDiv}>
-				<div className={c.slide}>
-					{/* style={contentStyle} */}
+        <Slider {...settings} className={c.carouselDiv}>
+		<div className={c.slide}>
 					<video className={c.video} style={contentStyle} src={tkaniVideo1} muted autoPlay loop></video>
-					{/* <img
-						style={contentStyle}
-						src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg"
-						alt=""
-					/> */}
 					<h1>tkani dlya platya</h1>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
 					<Button
@@ -74,7 +80,8 @@ export default function Headercarusel() {
 						link="/blablass"
 					/>
 				</div>
-			</Carousel>
+        </Slider>
 		</div>
-	);
+
+	)
 }
