@@ -1,53 +1,49 @@
 @import "../../scss/variables.scss";
 
-
-.categoryMain{
-    width:  100%;
-    background-color: $darkblue;
-    padding: 20px 0;
-    .title{
-        font-size: 1.8rem;
-        line-height: 2rem;
-        color: $light;
-        padding-left: 5%;
-    }
-    .circlesWrap {
-        width: 90%;
-        height: 250px;
-        margin: 2rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-        .card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            row-gap: 1.2rem;
-           
-            .circle {
-                width: 220px;
-                height: 220px;
-                background-color: $light;
-                border-radius: 360%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: .3s all;
-                &:hover{
-                    transform: scale(1.04);
-                }
-                img{
-                   
-                    object-fit: cover;
-                }
-            }
-            p{
-                font-size: 1.2rem;
-                font-weight: 500;
-                color: $light;
-            }
-        }
-    }
+.categoryMain {
+	width: 100%;
+	.title {
+		margin: 4rem 0 1.7rem 0;
+		font-size: 1.8rem;
+		line-height: 2rem;
+		color: $light;
+		padding-left: 5%;
+	}
+	.circlesWrap {
+		width: 100%;
+		height: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			row-gap: 1.2rem;
+			.circle {
+				width: 180px;
+				height: 180px;
+				background-color: $light;
+				border-radius: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: 0.3s all;
+				&:hover {
+					transform: scale(1.04);
+					box-shadow: 0 0 20px 3px rgb(131, 0, 183);
+				}
+				img {
+					width: 125%;
+					object-fit: cover;
+				}
+			}
+			p {
+				font-size: 1.2rem;
+				font-weight: 500;
+				color: $light;
+			}
+		}
+	}
 }
