@@ -1,83 +1,85 @@
 @import "../../scss/variables.scss";
 
 .menu {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  &__link {
-    height: 50px;
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2%;
-    color: #08155b;
-    &:hover {
-      border-color: #08155b;
-      color: #08145bb7;
-    }
-    &:hover p {
-      color: #08145bb7;
-    }
-    img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    h4 {
-      width: 70%;
-      text-align: left;
-      font-weight: 500;
-    }
-    p {
-      color: #ddd;
-    }
-  }
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	&__link {
+		height: 50px;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 2%;
+		color: #08155b;
+		&:hover {
+			border-color: #08155b;
+			color: #08145bb7;
+		}
+		&:hover p {
+			color: #08145bb7;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		h4 {
+			width: 70%;
+			text-align: left;
+			font-weight: 500;
+		}
+		p {
+			color: #ddd;
+		}
+	}
 }
 
 .modal {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 1;
-  background-color: #fff;
-  max-height: 100%;
-  min-height: 100%;
-  width: 67.1vw;
-  padding: 14px 30px;
-
-  align-items:normal;
-//   justify-content: space-between;
-  overflow: auto;
-  gap: 1rem;
-  display: flex;
-//   flex-direction: column;
-  flex-wrap: wrap;
+	border: 1px solid #ddd;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1;
+	background-color: rgb(245, 245, 245);
+	max-height: 100%;
+	min-height: 100%;
+	width: 67.1vw;
+	padding: 14px 30px;
+	align-items: normal;
+	//   justify-content: space-between;
+	overflow: auto;
+	gap: 1rem;
+	display: flex;
+	//   flex-direction: column;
+	flex-wrap: wrap;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324);
+	border-radius: 3px;
 }
 
 .category {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  margin: 5px;
-//   flex: 0;
-  //   margin: 0;
-  &Title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #01579b;
-    margin-bottom: 12px;
-  }
-  &Link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #666666;
-    margin-bottom: 8px;
-  }
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin: 5px;
+	//   flex: 0;
+	//   margin: 0;
+	&Title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		color: #01579b;
+		margin-bottom: 12px;
+	}
+	&Link {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 16px;
+		color: #666666;
+		margin-bottom: 8px;
+	}
 }

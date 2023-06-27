@@ -7,18 +7,20 @@
 .carousel {
 	width: 100%;
 	.carouselDiv {
+		border-radius: 3px;
 		height: 450px;
 		margin-bottom: 15px;
+		overflow: hidden;
 		.slide {
 			height: 450px;
 			position: relative;
 			video {
 				width: 100%;
-				height: 100%;
+				height: 450px;
 				object-fit: cover;
 			}
 			img {
-				height: 100%;
+				height: 450px;
 				object-fit: cover;
 			}
 		}
