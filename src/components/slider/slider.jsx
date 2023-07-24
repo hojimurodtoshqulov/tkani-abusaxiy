@@ -44,7 +44,7 @@ export default function Headercarusel() {
           <img
             style={contentStyle}
             src={img2}
-            alt=""
+            alt="ТКАНИ ДЛЯ ДОМА"
           />
           <h1>ТКАНИ ДЛЯ ДОМА</h1>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -58,7 +58,7 @@ export default function Headercarusel() {
           <img
             style={contentStyle}
             src={img3}
-            alt=""
+            alt="ФУРНИТУРА"
           />
           <h1>ФУРНИТУРА</h1>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -72,7 +72,7 @@ export default function Headercarusel() {
           <img
             style={contentStyle}
             src={img4}
-            alt=""
+            alt="ГОТОВЫЕ ФАСОНЫ"
           />
           <h1>ГОТОВЫЕ ФАСОНЫ</h1>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
